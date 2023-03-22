@@ -6,3 +6,431 @@
 body{
     font-family: 'Inter' ,sans-serif;
 }
+.web_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.header_container{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 20px;
+    border-bottom : 1px solid #d6d3d3;
+}
+.header_container .header_left{
+    display: flex;
+    align-items:center;
+    gap : 35px;
+}
+.header_left .header_nav{
+    display: flex;
+    /* justify-content:center;
+    align-items:center; */
+    position:relative;
+}
+.header_nav ul{
+    position:relative;
+    display: flex;
+    gap : 20px;
+}
+.header_nav ul li{
+    list-style: none;
+}
+.header_nav ul li a{
+    text-decoration: none;
+    color : #333;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+    gap : 20px;
+}
+.header_right .search_header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search_header input[type="text"]{
+    padding-left: 40px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f2efef;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 300px;
+    opacity: 0.8;
+}
+.search_header .fa-magnifying-glass{
+    position: absolute;
+    left: 12px;
+    z-index: 9;
+}
+.header_select{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+
+.web_content_container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding : 20px 170px;
+}
+.products_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap : 20px;
+    padding-bottom: 50px;
+    border-bottom:1px solid #d4cccc;
+}
+.products_container h2{
+    font-size: 2.2em;
+}
+.products_select{
+    position: relative;
+}
+.products_select ul{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+.products_select ul li{
+    list-style: none;
+}
+.products_select ul li a{
+    text-decoration: none;
+    color : #333;
+}
+.products_review{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.products_review .detail_review{
+    display: flex;
+    align-items: center;
+}
+.detail_review p{
+    font-weight: 600;
+}
+.detail_review p span{
+    color : #9c9b9b;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.status_review{
+    display: flex;
+    align-items: center;
+    gap : 25px;
+}
+.status_review .share,
+.status_review .Save{
+    display: flex;
+    gap : 10px;
+    align-items: center;
+}
+.detail_products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* gap : 15px; */
+}
+.detail_products .right_image {
+   display: grid;
+   grid-template-columns: repeat(2 , 1fr);
+   gap: 15px;
+}
+.decrips_product{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.decrips_product .infor_product{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    width: 60%;
+}
+.decrips_product .infor_product h3{
+    font-size: 1.3em;
+}
+.infor_product p{
+    line-height: 25px;
+}
+.trans_product{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.trans_left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+.trans_right{
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+}
+.buy_product{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    padding : 15px 15px;
+    border: 1px solid #e8e6e6;
+    border-radius: 3px;
+}
+.cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+.cart h3{
+    font-size: 2em;
+    font-weight: 700;
+    color : cyan;
+    display: flex;
+    justify-content: flex-end;
+}
+.cart_select {
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+.cart_select .color,
+.cart_select .size,
+.cart_select .number{
+    outline : none;
+    border: none;
+    background-color: rgb(219, 212, 212);
+    padding : 10px;
+    width: 300px;
+    border-radius: 3px;
+}
+.total_cart{
+    display: flex;
+    align-items : center;
+    justify-content: space-between
+}
+.total_cart h5{
+    color : gray;
+    font-weight: 400;
+}
+.total_cart span{
+    font-weight: 700;
+}
+.btn_select{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap : 15px;
+}
+.btn_select .buy_now{
+    outline: none;
+    border:none;
+    background-color: rgb(39, 202, 202);
+    border-radius: 3px;
+    padding : 14px;
+    color : #fff;
+    font-weight: bold;
+}
+.btn_select .add_cart{
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    gap : 8px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(39, 202, 202);
+    background-color: #fff;
+    padding : 9px;
+    color :rgb(39, 202, 202);
+}
+.btn_select .add_cart img{
+    transform: scale(0.7);
+}
+.reviews_container{
+    display : flex;
+    flex-direction: column;
+    position: relative;
+    margin: 50px 0;
+}
+.review_header{
+    display : flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.review_left{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 10px;
+}
+.review_left h3{
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.review_left p{
+    font-weight: 600;
+}
+.review_left p span{
+    color : rgb(159, 156, 156);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.review_right{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+    color :rgb(159, 156, 156)
+}
+.review_content{
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    column-gap: 50px;
+    row-gap: 50px;
+    align-items: center;
+    margin : 40px 0;
+    padding-bottom: 70px;
+    border-bottom:1px solid #d4cccc;
+}
+.review_user{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+}
+.review_user .user_infor{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.review_user p{
+    line-height: 25px;
+}
+.details_user{
+    position: relative;
+}
+.details_user .status_user{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+.details_user .status_user span{
+    color : gray
+}
+.ralated_container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid rgb(221, 209, 209);
+    padding-bottom: 50px;
+}
+.related_header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+    color : #9c9b9b;
+}
+.lists_product{
+    display: flex;
+    align-items:center;
+    gap : 20px;
+    padding : 25px 0;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.product_detail{
+    display: flex;
+    flex-direction: column;
+    margin-top : 15px;
+    gap : 10px;
+}
+.product_detail .name_product{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.product_detail .price{
+    color: rgb(39, 202, 202);
+    font-weight: 700;
+}
+.product_rating{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.product_rating span{
+    font-size: 0.8em;
+    color :rgb(172, 170, 170);
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding : 40px;
+}
+.footer_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 10px;
+}
+.footer_header img{
+    transform: scale(1.4);
+}
+.email_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email_footer input{
+    padding: 10px;
+    position: relative;
+}
+.email_footer input[type="text"]{
+    padding-left: 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(229, 218, 218);
+    width: 300px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.email_footer .fa-envelope{
+    position: absolute;
+    left: 410px;
+    z-index: 99;
+}
+.email_footer button{
+    padding : 10px 17px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: rgb(39, 202, 202);
+    color : #fff;
+    font-weight: bold;
+}
